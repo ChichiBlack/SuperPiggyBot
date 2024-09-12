@@ -9,6 +9,5 @@ import piggy.token.BotToken;
 public class Main {
     public static void main(String[] args) {
         JDA api = JDABuilder.createDefault(BotToken.BOT_TOKEN).enableIntents(GatewayIntent.MESSAGE_CONTENT).addEventListeners(new PingListener()).build();
-
     }
 }
